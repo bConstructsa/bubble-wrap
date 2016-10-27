@@ -2730,7 +2730,7 @@ layers:
 #                           }
 #                       }
 #                   }
-                interactive: true
+#                interactive: true
             lines:
                 style: lines
                 order: 330
