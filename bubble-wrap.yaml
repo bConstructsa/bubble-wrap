@@ -1319,6 +1319,7 @@ layers:
                 outline:
                     order: 352
             text-blend-order:
+                interactive: 'function() { return $zoom > 12; }'
                 text_source: global.ux_language_text_source
                 visible: false    # labels are enabled by each layer below
                 font:
