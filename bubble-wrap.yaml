@@ -1312,7 +1312,7 @@ layers:
         filter: { not: { kind: rail } }
         draw:
             lines:
-                interactive: true
+                interactive: 'function() { return $zoom > 13; }'
                 # let roads sort themselves past zoom 14 (using server value)
                 order: global.feature_order
                 # but give them all the same outline
@@ -2741,7 +2741,7 @@ layers:
         # turn interactive feature selection on for buildings with names
         interactive:
             filter: { name: true }
-            draw: { polygons: { interactive: true } }
+            draw: { polygons: { interactive: 'function() { return $zoom > 13; }' } }
 
         # building footprints, pre-extrusion
         footprints:
